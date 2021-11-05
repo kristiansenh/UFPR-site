@@ -1,0 +1,70 @@
+/* Reset global styles 
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End of reset */
+
+.ufpr-img {
+  width: 100%;
+}
+
+
+/* Parent element -- div */
+.ufpr-info {
+    background-color: #cccccc;
+    text-align: center; 
+    padding: 30px;
+}
+
+/* Child and inline elements: "span" */
+.texto-paragrafo {
+    font-size: 20px;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+.italico {
+    font-style: italic;
+    color: red;
+}
+/* End of child element */
+
+
+
+/* Parent element */
+.ufpr-principios {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* h2 */
+.subheadline {
+    text-align: center;
+}
+
+/* ul */
+.list {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;    
+    width: 20%;
+    margin-right: 15%;
+    font-style: italic;
+}
+
+.logo-jandaia {
+    position: relative;              /* Atributo adicional para conseguir alinhar a imagem à direita */                         
+    width: 50%;
+    margin: 0 30rem;
+
+    /* Também deu certo com: 
+    /* float: right */
+    /* margin: 0 10rem; */
+     
+}
