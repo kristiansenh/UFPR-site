@@ -1,0 +1,136 @@
+/* Global reset styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* -- Header --*/
+header {
+    background: #bbbbbb;              /* fundo cinza claro */
+    padding: 20px 0;
+}
+
+.ufpr-logo {
+    display: inline-block;
+    width: 50%;
+}
+
+/* caixa == trabalha como um container */
+.caixa {
+    /* width: 940px; */
+    position: relative;
+    /* margin: 0 auto; */
+}
+
+/* navegation */
+.nav-list {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/* ul */
+/* ul é um elemento pai */
+.list {
+    display: flex;                              /* default direction: linha */
+    margin: 0 0 0 15px;                         /*margin-left: 15px; */
+} 
+
+/* li -- tanto quanto os elementos do header e do body */
+/* li é um elemento filho do "ul" */
+.item {
+    list-style: none;
+   /* display: inline; */
+    margin-right: 1rem;
+}
+
+/* a */
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;                           /* Deixa o texto em "negrito" */
+    font-size: 22px;
+}
+
+.link:hover {
+    color: #c78c19;
+    text-decoration: underline;                 /* É mais bonito sem o underline :< */ 
+}
+
+/* -- Body -- */
+.cursos {
+    padding: 50px 0;
+}
+
+.logo-curso {
+    width: 60px;
+    height: 60px;
+}
+
+/* li */
+.item-cursos {
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    text-align: center;
+    
+    border: 2px solid #000000;
+    border-radius: 5%;
+}
+
+.item-cursos:hover {
+    border-color: #c78c19;
+    transform: scale(1.1);
+}
+
+/* Comportamento ao clicar no mouse */
+.item-cursos:active {
+    border-color: #088c19;
+}
+
+/*
+.item-cursos:hover h2 {
+    font-size: 34px;
+
+O elemento "h2" é um elemento filho do "li" .item-cursos
+Ao ter o atributo "transform: scale(1.1) no .item-cursos:hover, todos os elementos filhos do li também 
+herdam o mesmo atributo de scale ou "crescimento" 
+
+Por tanto, não é necessário o font-size: 34px 
+*/
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cursos-descricao {
+    font-size: 18px;
+}
+
+.cursos-periodo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+/* -- Footer -- */
+footer {
+    text-align: center;
+    background: #cccccc;
+    padding: 40px 0;
+}
+
+.texto-rodape {
+    font-size: 13px;
+}

@@ -1,0 +1,180 @@
+/* Global reset styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none
+}
+
+/* "container" == main nas videoaulas */
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* -- Header --*/
+header {
+    background: #bbbbbb;              /* fundo cinza claro */
+    padding: 20px 0;
+}
+
+.ufpr-logo {
+    display: inline-block;
+    width: 50%;
+}
+
+/* caixa == trabalha como um container */
+.caixa {
+    /* width: 940px; */
+    position: relative;
+    /* margin: 0 auto; */
+}
+
+/* navegation */
+.nav-list {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/* ul */
+/* ul é um elemento pai */
+.list {
+    display: flex;                              /* default direction: linha */
+    margin: 0 0 0 15px;                         /*margin-left: 15px; */
+} 
+
+/* li -- tanto quanto os elementos do header e do body */
+/* li é um elemento filho do "ul" */
+.item {
+    list-style: none;
+   /* display: inline; */
+    margin-right: 1rem;
+}
+
+/* a */
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;                           
+    font-size: 22px;
+}
+
+.link:hover {
+    color: #c78c19;
+    text-decoration: underline;                 
+}
+
+
+/* ==========  Formulários ========== */
+/*
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+*/
+
+form {
+    margin: 40px 0;
+}
+
+.label,
+.input-text,
+.message {
+    display: block;                                          /* Também dá certo com flex */   
+}
+
+
+.paragrafo, 
+.label {
+    font-size: 20px;                                         /* 16px = 1rem, 20px = 1.25rem */
+    margin: 0 0 10px;
+}
+
+.message, 
+.input-text {
+    width: 50%;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+}
+
+.checkbox {
+    margin: 20px 0;   
+}
+
+/* Button: enviar formulário */
+.enviar {
+    width: 40%;
+    padding: 15px 0;                                         /* 0.938 rem */
+    color: #fff;                                           /* white */    
+    background-color: orange;
+    border: none;
+    border-radius: 5px;                                      /* Sugestão: 1rem; */
+    cursor: pointer;
+    transition: 1s all;
+
+    font-size: 18px;                                         /* 1.125 */
+    font-weight: 600;                                        /* a partir de 600 == bold */   
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+/* Table */
+table {
+    margin: 20px 0 40px;
+    border-spacing: 0;                                     /* por algum extranho motivo o "table" tem um gap por default */
+}
+
+th {
+    color: white;
+    background-color: gray;
+    font-weight: 600;
+}
+
+/* Pequena "gambiarra" == os borders estavam se sobrepondo */
+th:nth-child(1){
+    border: 1px solid #000;
+}
+
+th:nth-child(2){
+    /*
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    */
+    border: 1px solid #000;
+    border-left: none; 
+}
+
+/* De novo, há uma sobreposição dos "borders" */
+td {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 8px 15px;
+}
+
+
+td:nth-child(1) {
+    border-left: 1px solid #000;
+}
+
+
+/* ==========  Footer ========== */
+footer {
+    text-align: center;
+    background: #cccccc;
+    padding: 40px 0;
+}
+
+.texto-rodape {
+    font-size: 13px;
+}

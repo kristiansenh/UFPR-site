@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ensino superior, universidade, universidade federal, UFPR, Jandaia do Sul">
+    <meta name="description" content="UFPR em Jandaia do Sul">
+    <!-- <meta name="author" content="Kristiansenh"> GitHub page -->
+
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Contato - UFPR Jandaia do Sul</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="caixa">
+                <h1><img class="ufpr-logo" src="./img/logo_ufpr_jandaia.png" alt="Logo da UFPR de Jandaia do Sul"></h1>
+
+                <!-- Tag semântica de navegação -->
+                <nav class="nav-list">
+                    <ul class="list">
+                        <!-- Home -->
+                        <li class="item">
+                            <a href="index.html" class="link">Home</a>
+                        </li>
+                        <!-- Cursos  -->
+                        <li class="item">
+                            <a href="cursos.html" class="link">Cursos</a>
+                        </li>   
+                        <!-- Contato -->
+                        <li class="item">
+                            <a href="" class="link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of nav -->
+
+            </div>
+        </div> <!-- End of container -->
+    </header> <!-- End of header -->
+
+    <main>
+        <section class="form">
+            <div class="container">
+
+                <form>
+                    <label class="label" for="nomesobrenome">Nome e sobrenome</label>
+                    <input class="input-text" type="text" id="nomesobrenome" required>
+
+                    <label class="label" for="email">E-mail</label>
+                    <input class="input-text" type="email" id="email" placeholder="email@dominio.com" required>
+
+                    <label class="label" for="telefone">Telefone</label>
+                    <input class="input-text" type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                    <label class="label" for="mensagem">Mensagem</label>
+                    <textarea class="message" id="mensagem" cols="70" rows="10" required></textarea>
+
+                    <!-- contatos -->
+                    <fieldset>
+                        <!-- Como prefere o nosso contato?-->
+                        <legend class="paragrafo">
+                            Como prefere o nosso contato?
+                        </legend>
+
+                        <!-- radio box -->
+                        <label class="label" for="radio-email">
+                            <input type="radio" name="contato" value="email" id="radio-email"> E-mail
+                        </label>
+
+                        <label class="label" for="radio-telefone">
+                            <input type="radio" name="contato" value="radio-telefone" id="radio-telefone"> Telefone
+                        </label>
+
+                        <label class="label" for="radio-whats">
+                            <input type="radio" name="contato" value="whatsapp" id="radio-whats" checked> Whatsapp
+                        </label>
+                    </fieldset>
+                    <!-- End of "ontatos" box -->
+                    
+                    <!-- horários -->
+                    <fieldset>
+                        <legend class="paragrafo">Qual horário prefere ser atendido?</legend>
+
+                        <!-- Combo box -->
+                        <select name="" id="">
+                            <option value="">Manha</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noite</option>
+                        </select>
+                    <fieldset>
+                    <!-- End of "horários" box -->
+                    
+                     <!-- check box == "caixinha"-->
+                     <label class="label checkbox" for="checkbox-form">
+                        <input type="checkbox" id="checkbox-form" checked>Gostaria de receber nossas novidades por email?
+                    </label>
+
+                    <!-- button -->
+                    <input class="enviar" type="submit" value="Enviar formulário"/>
+                </form>
+
+                <table>
+                    <!-- "tr" == table row -->
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>                           
+                    </thead>   
+                    <!-- Table body -->                    
+                    <tbody>
+                        <tr>    
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                       <tr>    
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>    
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>                   
+                </table>
+
+            </div>  <!-- End of container -->
+        </section>
+    </main>
+
+    <footer>
+        <p class="texto-rodape">&copy; Copyright - UFPR Jandaia do Sul</p>
+    </footer>
+</body>
+
+</html>
